@@ -1,0 +1,25 @@
+.username{
+	display: block;
+	float: left;
+	width: auto;
+	margin-left: 2px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	color: #31a5e7;
+}
+.hello{
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	letter-spacing:2px; 
+	padding-left: 5%;
+}
+.content p{
+	  text-indent: 2em;
+    font-size: 16px;
+    width: 90%;
+    color: #606060;
+    padding: 0 5%;
+}
