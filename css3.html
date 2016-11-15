@@ -1,62 +1,70 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">  <!--移动设备申明moblie类型-->
 <html lang="en">
-<head>
-	<meta charset="utf-8">
+
+	<head>
+		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="renderer" content="webkit|ie-comp|ie-stand">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" /><!--使移动端禁止网页的放缩-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<!--使移动端禁止网页的放缩-->
 		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-		<title>你好，我的朋友</title>
+		<title>夏贞逸专属页面</title>
 
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 		<link rel="stylesheet" type="text/css" href="css/examples.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 
-	<!--[if IE]>
+		<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
 
-	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>	
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		
+		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+		
 
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-       			css3: true
-       		});
-		});
-	</script>
+	</head>
 
-</head>
-<body>
+	<body>
 
-<div id="fullpage">
-	<div class="section " id="section0">
-		<h1>fullPage.js</h1>
-		<p>CSS3</p>
-		<img src="imgs/fullPage.png" alt="fullPage" />
-	</div>
-	<div class="section" id="section1">
-		<div class="intro">
-			<h1>Speed on mobile</h1>
-			<p>
-	      If CSS3 transforms are supported (e.g. on mobile devices) they will be used for animations, usually a good
-	      choice if the animation on mobile devices is slow.
-			</p>
+		<div id="fullpage">
+			<div class="section" id="section0">
+				<div class="intro1">
+					<div class="username"></div>
+					<h1>第一次遇见你是在</h1>
+					<h1>2010年8月30日</h1>
+					<h1>你坐在我前面</h1>
+					<h1>跟我说你叫夏贞逸</h1>
+					<h1>我记得很清楚</h1>
+					<h1>因为那天是我</h1>
+					<h1>16岁生日</h1>
+				</div>
+
+			</div>
+			<div class="section" id="section1">
+				<div class="intro2 inner">
+					<h1>Speed on mobile</h1>
+					<p>在接下来的三年里，我们不是邻桌，就是前后桌。在这期间，我听你讲了很多废话，与此同时，性格内向的我，也学会了滔滔不绝地讲废话，让这段本该灰暗的时光变得明亮起来。我不知道我有没有改变过别人，但是改变过我的人，你算一个。</p>
+				</div>
+			</div>
+			<div class="section" id="section2">
+				<div class="intro3 inner">
+					<h1>No CSS3? No problem!</h1>
+					<p>If CSS3 is not available, animations will fall back to jQuery animate.</p>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<div class="myName">
+					<p>唐松</p>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<h1>No CSS3? No problem!</h1>
-			<p>If CSS3 is not available, animations will fall back to jQuery animate.</p>
-		</div>
-	</div>
-</div>
 
-</body>
+	</body>
+
 </html>

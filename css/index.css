@@ -190,6 +190,7 @@ footer{
 }
 #login .loginform input{
   color: #444;
+  text-align: center;
 }
 #login .loginform .pad{
   overflow: hidden;
