@@ -18,33 +18,37 @@ $(function() {
 			location.href = "./tangsong.html";
 		} else if(name == "赵帅帅") {
 			location.href = "./shuaishuai.html";
+		} else if(name == "帅帅哥") {
+			location.href = "./shuaishuai.html";
 		} else if(name == "张桃") {
-			location.href = "./";
+			location.href = "./taotao.html";
 		} else if(name == "梁琦") {
-			location.href = "./";
+			location.href = "./liangqi.html";
 		} else if(name == "於琳童") {
-			location.href = "./";
+			location.href = "./ertong.html";
 		} else if(name == "夏贞逸") {
-			location.href = "./";
+			location.href = "./azhen.html";
 		} else if(name == "段预测") {
-			location.href = "./";
+			location.href = "./duanzong.html";
 		} else if(name == "胡胜男") {
-			location.href = "./";
+			location.href = "./nannan.html";
 		} else if(name == "王思思") {
-			location.href = "./";
+			location.href = "./sisi.html";
 		} else if(name == "冀倩倩") {
-			location.href = "./";
+			location.href = "./qianqian.html";
 		} else if(name == "唐伶凤") {
-			location.href = "./";
+			location.href = "./xiaofeng.html";
 		} else if(name == "李小芳") {
-			location.href = "./";
+			location.href = "./xiaofang.html";
 		} else if(name == "董琳珏") {
-			location.href = "./";
+			location.href = "./juejue.html";
 		} else if(name == "甘元佑") {
-			location.href = "./";
+			location.href = "./agan.html";
 		} else if(name == "尹家怡") {
-			location.href = "./";
-		} else {
+			location.href = "./azhu.html";
+		} else if(name == "汪秀凤") {
+			location.href = "./xiufeng.html";
+		}else {
 			location.href = "./friends.html";
 		}
 	});
@@ -62,5 +66,5 @@ $(function() {
 
 //读取sessionStorage中的参数，并放入到网页中
 $(function() {
-	$(".username").html(sessionStorage.sitename + " :");
+	$(".username").html(sessionStorage.sitename + ":");
 });
