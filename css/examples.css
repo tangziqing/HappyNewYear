@@ -70,22 +70,17 @@ body{
 .intro2{
 	padding-top: 30%;
 }
-.intro2 h1{
+.intro2 h1,.intro3 h1{
 	width: 60%;
 	margin: 0 auto;
 	font-size: 1.5em;
 	line-height: 26px;
 }
-.intro2 p{
+.intro2 p,.intro3 p{
 	width: 60%;
 	margin: 0 auto;
 	font-size: 1.2em;
 	line-height: 26px;
-}
-.intro3 p{
-	width: 50%;
-	margin: 0 auto;
-	font-size: 1em;
 }
 .infoHide{
 	opacity: 0;
@@ -93,33 +88,30 @@ body{
 .section{
 	text-align:center;	
 }
-#section0{
+.theme0{
 	background: url(http://ogovuaov8.bkt.clouddn.com/3.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-#section1{
+.theme1{
 	background: url(http://ogovuaov8.bkt.clouddn.com/18.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-#section2{
-	background: url(http://ogovuaov8.bkt.clouddn.com/12.jpg) no-repeat;
+.theme2{
+	background: url(http://ogovuaov8.bkt.clouddn.com/32.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-#section3{
+.theme3{
 	background: url(http://ogovuaov8.bkt.clouddn.com/8.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-.myName{
-	margin-top: 50%;
-}
-.myName p{
-	font-size: 1.3em;
-	font-family: arial;
-	color: #fff;
+.theme4{
+	background: url(http://ogovuaov8.bkt.clouddn.com/9.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 .username{
 	width: auto;
@@ -130,48 +122,6 @@ body{
 	color: #000;
 }
 
-#download{
-	margin: 10px 0 0 0;
-	padding: 15px 10px;
-	color: #fff;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-	background-color: #49afcd;
-	background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
-	background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
-	background-image: -webkit-gradient(linear,0 0,0 100%,from( #5bc0de),to( #2f96b4));
-	background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
-	background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
-	background-image: linear-gradient(top, #5bc0de, #2f96b4);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
-	border-color: #2f96b4 #2f96b4 #1f6377;
-	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	vertical-align: middle;
-	cursor: pointer;
-	display: inline-block;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-}
-#download a{
-	text-decoration:none;
-	color:#fff;
-}
-#download:hover{
-	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-	background-color: #2F96B4;
-	background-position: 0 -15px;
-	-webkit-transition: background-position .1s linear;
-	-moz-transition: background-position .1s linear;
-	-ms-transition: background-position .1s linear;
-	-o-transition: background-position .1s linear;
-	transition: background-position .1s linear;
-}
 #infoMenu{
 	height: 20px;
 	color: #f2f2f2;
@@ -198,5 +148,4 @@ body{
 	display:inline-block;
 	position:relative;
 }
-
 

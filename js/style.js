@@ -8,6 +8,20 @@ $(function() {
 			$("#submit").attr("disabled", "disabled");
 		}
 	});
+	
+	//点击footer显示网站相关情况
+	$(".belief").on("click", function(e) {
+		$(".webInfo").fadeIn();
+
+		$(".close").one("click", function() {
+			$(".webInfo").hide();
+		});
+
+		e.stopPropagation();   //阻止冒泡事件
+	});
+	$(".infoBox").on("click", function(e) {
+		e.stopPropagation();
+	});
 	//判断输入的内容跳转到相应的页面，low bee方法
 	$('#submit').click(function() {
 		var name = $('#password').val();
