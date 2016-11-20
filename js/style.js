@@ -12,6 +12,7 @@ $(function() {
 	//点击footer显示网站相关情况
 	$(".belief").on("click", function(e) {
 		$(".webInfo").fadeIn();
+		$(".infoBox").addClass("showup");
 
 		$(".close").one("click", function() {
 			$(".webInfo").hide();
