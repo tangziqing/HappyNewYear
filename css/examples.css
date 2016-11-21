@@ -70,7 +70,7 @@ body{
 .intro2{
 	padding-top: 30%;
 }
-.intro2 h1,.intro3 h1{
+.intro2 h1,.intro3 h1,.intro4 h1,.intro5 h1{
 	width: 60%;
 	margin: 0 auto;
 	font-size: 1.5em;
@@ -82,6 +82,29 @@ body{
 	font-size: 1.2em;
 	line-height: 26px;
 }
+.intro4 h1{
+	width: 80%;
+	margin: 10px auto;
+	font-size: 1.5em;
+	line-height: 26px;
+}
+.intro4 p{
+	width: 80%;
+	margin: 10px auto;
+	font-size: 1.2em;
+	line-height: 26px;
+}
+.intro5{
+	padding-top: 40%;
+}
+
+.intro5 p{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 1.2em;
+	line-height: 26px;
+}
+
 .infoHide{
 	opacity: 0;
 }
@@ -91,7 +114,7 @@ body{
 .theme0{
 	background: url(http://ogovuaov8.bkt.clouddn.com/3.jpg) no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: 100%;
 }
 .theme1{
 	background: url(http://ogovuaov8.bkt.clouddn.com/18.jpg) no-repeat;
@@ -109,7 +132,12 @@ body{
 	background-size: cover;
 }
 .theme4{
-	background: url(http://ogovuaov8.bkt.clouddn.com/9.jpg) no-repeat;
+	background: url(http://ogovuaov8.bkt.clouddn.com/31.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.theme5{
+	background: url(http://ogovuaov8.bkt.clouddn.com/5.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -148,4 +176,71 @@ body{
 	display:inline-block;
 	position:relative;
 }
-
+.mypic{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+.mypic img{
+	width: 100%;
+	height: 100%;
+}
+.mybtn{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background: #0099FF;
+	color: #fff;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin: 0 2%;
+}
+.yesReply{
+	width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    
+}
+.noReply{
+	width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    
+}
+.yesReply,.noReply{
+	width: 72%;
+    height: 10%;
+    padding: 4%;
+    background: #fff;  
+    position: absolute;
+    z-index: 100;
+    bottom: 40%;
+    left: 10%;
+    display: none;
+    /*transform: scale(0);
+    -webkit-transform: scale(0);*/
+}
+.no:disabled{
+	background: #999 !important;
+    cursor: no-drop;
+}
+.yesReply p,.noReply p{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 30px;
+}
+.showup{
+	transform:scale(1);
+	-webkit-transform:scale(1);
+	transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+}

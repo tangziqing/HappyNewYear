@@ -1,9 +1,16 @@
 $(function() {
 	//事件监听，当字符数超过2的时候允许点击
 	$('#password').bind('input propertychange', function() {
-		var NameLength = $(this).val().length;
+		var GanYuanYou = $(this).val();
+		var NameLength = $(this).val().length;			
 		if(NameLength >= 2) {
-			$('#submit').removeAttr("disabled");
+			if(GanYuanYou == "甘元佑"){
+				$('#submit').text("生日快乐")
+				$('#submit').removeAttr("disabled");
+			}else{
+				$('#submit').text("点击进入")
+				$('#submit').removeAttr("disabled");
+			}			
 		} else {
 			$("#submit").attr("disabled", "disabled");
 		}

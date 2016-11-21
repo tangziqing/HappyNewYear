@@ -33,7 +33,7 @@ $(function() {
 					$(this).removeClass("infoHide").addClass("fadeInUp");
 				});				
 			}
-			if(index == 2 || index == 3 || index == 4 || index == 5) {
+			if(index == 2 || index == 3 || index == 4 || index == 5 || index == 6) {
 				$('.inner').find('h1').each(function() {
 					$(this).removeClass("infoHide").addClass("fadeInDown");
 				});
@@ -41,7 +41,7 @@ $(function() {
 					$(this).removeClass("infoHide").addClass("fadeInUp");
 				});				
 			}
-			if(index == 6) {
+			if(index == 8) {
 				$('.zanzhu-con a').fadeIn(1000);
 			}
 		},
@@ -55,7 +55,7 @@ $(function() {
 					$(this).addClass("infoHide").removeClass("fadeInUp");
 				});				
 			}
-			if(index == 2 || index == 3 || index == 4 || index == 5) {
+			if(index == 2 || index == 3 || index == 4 || index == 5 || index == 6) {
 				$('.inner').find('h1').each(function() {
 					$(this).addClass("infoHide").removeClass("fadeInDown");
 				});
@@ -63,9 +63,20 @@ $(function() {
 					$(this).addClass("infoHide").removeClass("fadeInUp");
 				});
 			}
-			if(index == 6) {
+			if(index == 8) {
 				$('.zanzhu-con a').fadeOut(1000);
 			}
 		}
+	});
+});
+
+//选择题环节的趣味回答
+$(function() {
+	$('.yes').click(function(){
+		$(".yesReply").fadeIn().delay(3000).fadeOut();
+	});
+	$('.no').click(function(){
+		$(".noReply").fadeIn().delay(3000).fadeOut();
+		$('.no').attr("disabled", "disabled");
 	});
 });
