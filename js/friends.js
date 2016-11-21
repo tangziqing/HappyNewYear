@@ -72,8 +72,16 @@ $(function() {
 
 //选择题环节的趣味回答
 $(function() {
-	$('.yes').click(function(){
-		$(".yesReply").fadeIn().delay(3000).fadeOut();
+	var i = 1;
+	$('.yes').click(function(){		
+		if (i<2) {
+			$(".yesReply").fadeIn().delay(3000).fadeOut();
+			i++;
+		}else{
+			$(".yesReply3").fadeIn().delay(3000).fadeOut();
+			$('.yes').attr("disabled", "disabled");
+		}
+		
 	});
 	$('.no').click(function(){
 		$(".noReply").fadeIn().delay(3000).fadeOut();
