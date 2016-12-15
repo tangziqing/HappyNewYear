@@ -126,5 +126,6 @@ $(function() {
 	clipboard.on('error',
 		function(e) {
 			console.log(e);
+			alert("error");
 		});
 });
