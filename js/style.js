@@ -88,5 +88,5 @@ $(function() {
 //读取sessionStorage中的参数，并放入到网页中
 $(function() {
 //	$(".username").html(sessionStorage.sitename + ":");
-	$(".username").html(sessionStorage.getItem("setname") + ":");
+	$(".username").html(sessionStorage.getItem("setname"));
 });
