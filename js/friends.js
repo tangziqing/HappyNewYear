@@ -110,21 +110,35 @@ $(function() {
 
 //复制密令
 $(function() {
-	var c = document.getElementById("pwd");
-	var s = c.innerHTML;
-	var clipboard = new Clipboard('.copy', {
-		text: function() {
-			return s;
-		}
-	});
-	clipboard.on('success',
-		function(e) {
-			$(".yesReply2").fadeOut();
-			$(".copyRight").fadeIn().delay(3000).fadeOut();
-		});
-	clipboard.on('error',
-		function(e) {
-			console.log(e);
-			alert("error");
-		});
+//	var c = document.getElementById("pwd");
+//	var s = c.innerHTML;
+//	var clipboard = new Clipboard('.copy', {
+//		text: function() {
+//			return s;
+//		}
+//	});
+//	clipboard.on('success',
+//		function(e) {
+//			$(".yesReply2").fadeOut();
+//			$(".copyRight").fadeIn().delay(3000).fadeOut();
+//		});
+//	clipboard.on('error',
+//		function(e) {
+//			console.log(e);
+//			alert("error");
+//		});
+var clipboard = new Clipboard('.copy', {
+        text: function() {
+            return '这里是红包密令';
+        }
+    });
+
+    clipboard.on('success', function(e) {
+    	$(".yesReply2").fadeOut();
+	    $(".copyRight").fadeIn().delay(3000).fadeOut();
+    });
+
+    clipboard.on('error', function(e) {
+        alert("error");
+    });
 });
