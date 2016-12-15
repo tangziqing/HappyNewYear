@@ -92,15 +92,30 @@ $(function() {
 //选择题环节的趣味回答2
 $(function() {
 	var i = 1;
-	$('.high').click(function() {
+//	$('.high').click(function() {
+//		if(i < 2) {
+//			$(".yesReply2").fadeIn();
+//			i++;
+//		} else {
+//			$(".yesReply3").fadeIn().delay(3000).fadeOut();
+//			$('.high').attr("disabled", "disabled");
+//		}
+//
+//	});
+	$(".high").on("click", function(e) {
 		if(i < 2) {
 			$(".yesReply2").fadeIn();
+			$(".closes").one("click", function() {
+				$(".yesReply2").fadeOut();
+			});
+			e.stopPropagation();   //阻止冒泡事件
 			i++;
-		} else {
+		}else {
 			$(".yesReply3").fadeIn().delay(3000).fadeOut();
 			$('.high').attr("disabled", "disabled");
 		}
 
+				
 	});
 	$('.low').click(function() {
 		$(".noReply").fadeIn().delay(3000).fadeOut();
@@ -125,7 +140,6 @@ $(function() {
 	clipboard.on('error',
 		function(e) {
 			console.log(e);			
-			alert("您的浏览器不支持该功能，请手动长按复制");
-			$(".yesReply2").delay(8000).fadeOut();
+			alert("对不起，您的浏览器不支持该功能，请手动长按复制");
 		});
 });
