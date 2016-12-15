@@ -30,7 +30,8 @@ $(function() {
 	$('#submit').click(function() {
 		var name = $('#password').val();
 		if(typeof(Storage) !== "undefined") {
-			sessionStorage.sitename = name;
+//			sessionStorage.sitename = name;
+			sessionStorage.setItem("setname", name);
 		}
 		if(name == "唐松") {
 			location.href = "./tangsong.html";
@@ -86,5 +87,6 @@ $(function() {
 
 //读取sessionStorage中的参数，并放入到网页中
 $(function() {
-	$(".username").html(sessionStorage.sitename + ":");
+//	$(".username").html(sessionStorage.sitename + ":");
+	$(".username").html(sessionStorage.getItem("setname") + ":");
 });
