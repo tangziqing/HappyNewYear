@@ -17,7 +17,6 @@
 		<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
 		<script src="https://cdn.bootcss.com/clipboard.js/1.5.15/clipboard.min.js"></script>
-		<script src="https://cdn.bootcss.com/zeroclipboard/2.3.0/ZeroClipboard.min.js"></script>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -37,10 +36,6 @@
 			<p id="c">重庆邮电大学是国家布点设立并重点建设的几所邮电高校之一，是工业和信息化部与重庆市共建的一所特色鲜明、优势突出，在信息通信领域具有重要影响的高水平教学研究型大学。</p>
 			<button type="button" class="mybtn copy">复制</button>
 		</div>
-		<div class="content">
-			<button id="copy-button" data-clipboard-text="Copy Me!" title="Click to copy me.">复制2</button>
-			
-		</div>
 		<script>
 			var c = document.getElementById("c");
 			var s = c.innerHTML;
@@ -57,20 +52,6 @@
 				function(e) {
 					console.log(e);
 				});
-		</script>
-		<script>
-			var client = new ZeroClipboard( document.getElementById("copy-button") );
-
-client.on( "ready", function( readyEvent ) {
-  // alert( "ZeroClipboard SWF is ready!" );
-
-  client.on( "aftercopy", function( event ) {
-    // `this` === `client`
-    // `event.target` === the element that was clicked
-    event.target.style.display = "none";
-    alert("Copied text to clipboard: " + event.data["text/plain"] );
-  } );
-} );
 		</script>
 
 	</body>

@@ -203,7 +203,8 @@ body{
 	height: 40px;
 	line-height: 38px;
 	font-family: "微软雅黑";
-	font-size: 17px;
+	font-size: 16px;
+	text-align: center;
 	background: #0099FF;
 	color: #fff;
 	outline: none;
