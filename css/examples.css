@@ -198,7 +198,19 @@ body{
 	cursor: pointer;
 	margin: 0 2%;
 }
-
+.copyBtn{
+	width: 100px;
+	height: 40px;
+	line-height: 38px;
+	font-family: "微软雅黑";
+	font-size: 17px;
+	background: #0099FF;
+	color: #fff;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin: 0 2%;
+}
 .yesReply,.noReply,.yesReply3{
 	width: 72%;
     height: 10%;
@@ -212,11 +224,43 @@ body{
     /*transform: scale(0);
     -webkit-transform: scale(0);*/
 }
-.yes:disabled,.no:disabled{
+.yesReply2{
+	width: 72%;
+    height: 30%;
+    padding: 4%;
+    background: #fff;  
+    position: absolute;
+    z-index: 100;
+    bottom: 40%;
+    left: 10%;
+    display: none;
+}
+.yes:disabled,.no:disabled,.high:disabled,.low:disabled{
 	background: #999 !important;
     cursor: no-drop;
 }
 .yesReply p,.noReply p,.yesReply3 p{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 30px;
+}
+.yesReply2 p{
+	font-family: "微软雅黑";
+	font-size: 19px;
+	line-height: 40px;
+}
+.copyRight{
+	width: 72%;
+    height: 10%;
+    padding: 4%;
+    background: #fff;  
+    position: absolute;
+    z-index: 100;
+    bottom: 40%;
+    left: 10%;
+    display: none;
+}
+.copyRight p{
 	font-family: "微软雅黑";
 	font-size: 18px;
 	line-height: 30px;
@@ -226,4 +270,12 @@ body{
 	-webkit-transform:scale(1);
 	transition:all 0.3s;
 	-webkit-transition:all 0.3s;
+}
+#pwd{
+	font-family: "微软雅黑";
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 40px;
+	padding-bottom: 10px;
+	color: #FF0000;
 }

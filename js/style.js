@@ -4,14 +4,10 @@ $(function() {
 		var GanYuanYou = $(this).val();
 		var NameLength = $(this).val().length;			
 		if(NameLength >= 2) {
-			if(GanYuanYou == "甘元佑"){
-				$('#submit').text("生日快乐")
-				$('#submit').removeAttr("disabled");
-			}else{
-				$('#submit').text("点击进入")
-				$('#submit').removeAttr("disabled");
-			}			
+				$('#submit').text("新年快乐");
+				$('#submit').removeAttr("disabled");			
 		} else {
+			$('#submit').text("点击进入");
 			$("#submit").attr("disabled", "disabled");
 		}
 	});
@@ -66,11 +62,13 @@ $(function() {
 			location.href = "./juejue.html";
 		} else if(name == "甘元佑") {
 			location.href = "./agan.html";
-		} else if(name == "尹家怡") {
+		} else if(name == "尹佳怡") {
 			location.href = "./azhu.html";
 		} else if(name == "汪秀凤") {
 			location.href = "./xiufeng.html";
-		} else {
+		} else if(name == "谭静") {
+			location.href = "./jingjing.html";
+		}else {
 			location.href = "./friends.html";
 		}
 	});
