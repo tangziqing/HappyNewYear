@@ -22,6 +22,10 @@ $(function() {
 			$('.inner p').each(function() {
 				$(this).removeClass("fadeInUp").addClass("infoHide").addClass("animated");
 			});
+			$('.headLogo').addClass("infoHide");
+			$('.telPhone').addClass("infoHide");
+			$('.mypic').addClass("infoHide");
+			$('.mybtn').addClass("infoHide");
 		},
 		//进入到某屏页面之后触发的回调函数
 		afterLoad: function(anchorLink, index) {
@@ -33,7 +37,7 @@ $(function() {
 					$(this).removeClass("infoHide").addClass("fadeInUp");
 				});
 			}
-			if(index == 2 || index == 3 || index == 4 || index == 5 || index == 6) {
+			if(index == 2 || index == 3 || index == 4) {
 				$('.inner').find('h1').each(function() {
 					$(this).removeClass("infoHide").addClass("fadeInDown");
 				});
@@ -41,8 +45,25 @@ $(function() {
 					$(this).removeClass("infoHide").addClass("fadeInUp");
 				});
 			}
-			if(index == 8) {
-				$('.zanzhu-con a').fadeIn(1000);
+			if(index == 5) {
+				$('.inner').find('h1').each(function() {
+					$(this).removeClass("infoHide").addClass("bounceIn");
+				});
+				$('.inner').find('p').each(function() {
+					$(this).removeClass("infoHide").delay(750).addClass("bounceIn");
+				});
+				$('.headLogo').removeClass("infoHide").delay(500).addClass("showup");
+				$('.telPhone').removeClass("infoHide").delay(1000).addClass("showup");
+			}
+			if(index == 6){
+				$('.inner').find('h1').each(function() {
+					$(this).removeClass("infoHide").addClass("bounceIn");
+				});
+				$('.inner').find('p').each(function() {
+					$(this).removeClass("infoHide").addClass("bounceIn");
+				});
+				$('.mypic').removeClass("infoHide").delay(500).addClass("showup");
+				$('.mybtn').removeClass("infoHide").delay(1000).addClass("showup");
 			}
 		},
 		//离开页面时执行的回调函数
@@ -55,7 +76,7 @@ $(function() {
 					$(this).addClass("infoHide").removeClass("fadeInUp");
 				});
 			}
-			if(index == 2 || index == 3 || index == 4 || index == 5 || index == 6) {
+			if(index == 2 || index == 3 || index == 4) {
 				$('.inner').find('h1').each(function() {
 					$(this).addClass("infoHide").removeClass("fadeInDown");
 				});
@@ -63,8 +84,25 @@ $(function() {
 					$(this).addClass("infoHide").removeClass("fadeInUp");
 				});
 			}
-			if(index == 8) {
-				$('.zanzhu-con a').fadeOut(1000);
+			if(index == 5) {
+				$('.inner').find('h1').each(function() {
+					$(this).addClass("infoHide").removeClass("bounceIn");
+				});
+				$('.inner').find('p').each(function() {
+					$(this).addClass("infoHide").removeClass("bounceIn");
+				});
+				$('.headLogo').addClass("infoHide").removeClass("showup");
+				$('.telPhone').addClass("infoHide").removeClass("showup");
+			}
+			if(index == 6) {
+				$('.inner').find('h1').each(function() {
+					$(this).addClass("infoHide").removeClass("bounceIn");
+				});
+				$('.inner').find('p').each(function() {
+					$(this).addClass("infoHide").removeClass("bounceIn");
+				});
+				$('.mypic').addClass("infoHide").delay(500).removeClass("showup");
+				$('.mybtn').addClass("infoHide").delay(1000).removeClass("showup");
 			}
 		}
 	});
