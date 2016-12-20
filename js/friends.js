@@ -113,6 +113,7 @@ $(function() {
 		}else {
 			$(".yesReply3").fadeIn().delay(3000).fadeOut();
 			$('.high').attr("disabled", "disabled");
+			$('.low').attr("disabled", "disabled");
 		}
 
 				
@@ -140,6 +141,6 @@ $(function() {
 	clipboard.on('error',
 		function(e) {
 			console.log(e);			
-			alert("对不起，您的浏览器不支持该功能，请手动长按复制");
+			alert("对不起，Android版微信不支持该功能，请手动长按复制");
 		});
 });

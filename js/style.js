@@ -2,16 +2,16 @@ $(function() {
 	//事件监听，当字符数超过2的时候允许点击
 	$('#password').bind('input propertychange', function() {
 		var GanYuanYou = $(this).val();
-		var NameLength = $(this).val().length;			
+		var NameLength = $(this).val().length;
 		if(NameLength >= 2) {
-				$('#submit').text("新年快乐");
-				$('#submit').removeAttr("disabled");			
+			$('#submit').text("新年快乐");
+			$('#submit').removeAttr("disabled");
 		} else {
 			$('#submit').text("点击进入");
 			$("#submit").attr("disabled", "disabled");
 		}
 	});
-	
+
 	//点击footer显示网站相关情况
 	$(".belief").on("click", function(e) {
 		$(".webInfo").fadeIn();
@@ -19,13 +19,15 @@ $(function() {
 
 		$(".close").one("click", function() {
 			$(".webInfo").hide();
+			$(".infoBox").removeClass("showup");
 		});
 
-		e.stopPropagation();   //阻止冒泡事件
+		e.stopPropagation(); //阻止冒泡事件
 	});
 	$(".infoBox").on("click", function(e) {
 		e.stopPropagation();
 	});
+
 	//判断输入的内容跳转到相应的页面，low bee方法
 	$('#submit').click(function() {
 		var name = $('#password').val();
@@ -43,6 +45,8 @@ $(function() {
 		} else if(name == "梁琦") {
 			location.href = "./liangqi.html";
 		} else if(name == "於琳童") {
+			location.href = "./ertong.html";
+		} else if(name == "周云津") {
 			location.href = "./ertong.html";
 		} else if(name == "夏贞逸") {
 			location.href = "./azhen.html";
@@ -68,7 +72,7 @@ $(function() {
 			location.href = "./xiufeng.html";
 		} else if(name == "谭静") {
 			location.href = "./jingjing.html";
-		}else {
+		} else {
 			location.href = "./friends.html";
 		}
 	});

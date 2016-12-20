@@ -141,6 +141,11 @@ body{
 	background-position: center;
 	background-size: cover;
 }
+.theme6{
+	background: url(http://ogovuaov8.bkt.clouddn.com/16.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 .username{
 	width: auto;
 	height: 30px;
@@ -293,4 +298,38 @@ body{
 	width: 16px;
 	height: 16px;
 	margin: 4px;
+}
+.closes:touch{
+	background: #777777;
+}
+.headLogo{
+	width: 26%;
+	height: 26%;	
+	margin: 10% auto;
+}
+.headLogo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.telPhone{
+	display: block;
+	width: 120px;
+	height: 46px;
+	border-radius: 23px;
+	line-height: 44px;
+	font-family: "微软雅黑";
+	font-size: 17px;
+	text-align: center;
+	background: #00CC00;
+	color: #fff;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin: 10% auto;
+}
+.telPhone img{
+	width: 30px;
+	height: 30px;
+	margin: 8px 0;
 }
