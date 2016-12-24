@@ -136,16 +136,6 @@ body {
 	line-height: 26px;
 }
 
-.intro5 h1 {
-	width: 60%;
-	margin: 0 auto;
-	font-family: "微软雅黑";
-	font-size: 1.6em;
-	line-height: 30px;
-	color: #fff;
-	padding-bottom: 10%;
-}
-
 .intro2 p,
 .intro3 p {
 	width: 60%;
@@ -157,19 +147,44 @@ body {
 .intro4 h1 {
 	width: 80%;
 	margin: 10px auto;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	line-height: 26px;
+	color: #fff;
 }
-
 .intro4 p {
 	width: 80%;
 	margin: 10px auto;
 	font-size: 1.2em;
 	line-height: 26px;
+	color: #999999;
 }
-
 .intro5 {
 	padding-top: 20%;
+}
+.intro5 h1 {
+	width: 60%;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+	font-size: 1.6em;
+	line-height: 30px;
+	color: #fff;
+	padding-bottom: 10%;
+}
+.intro6 h1 {
+	width: 60%;
+	margin: 0 auto;
+	font-size: 1.5em;
+	font-family: "微软雅黑";
+	line-height: 26px;
+	color: #fff;
+}
+.intro6 p {
+	width: 60%;
+	margin: 0 auto;
+	font-size: 1.2em;
+	font-family: "微软雅黑";
+	line-height: 26px;
+	color: #fff;
 }
 
 .infoHide {
