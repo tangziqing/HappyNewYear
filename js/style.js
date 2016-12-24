@@ -36,10 +36,10 @@ $(function() {
 		}
 		if(name == "唐松") {
 			location.href = "./tangsong.html";
-		} else if(name == "赵帅帅") {
-			location.href = "./shuaishuai.html";
-		} else if(name == "帅帅哥") {
-			location.href = "./shuaishuai.html";
+		} else if(name == "李娅兰") {
+			location.href = "./yalan.html";
+		} else if(name == "雷琇麟") {
+			location.href = "./xiulin.html";
 		} else if(name == "张桃") {
 			location.href = "./taotao.html";
 		} else if(name == "梁琦") {
@@ -47,7 +47,7 @@ $(function() {
 		} else if(name == "於琳童") {
 			location.href = "./ertong.html";
 		} else if(name == "周云津") {
-			location.href = "./ertong.html";
+			location.href = "./yunjin.html";
 		} else if(name == "夏贞逸") {
 			location.href = "./azhen.html";
 		} else if(name == "段预测") {

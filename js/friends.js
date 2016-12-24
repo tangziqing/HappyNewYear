@@ -26,6 +26,9 @@ $(function() {
 			$('.telPhone').addClass("infoHide");
 			$('.mypic').addClass("infoHide");
 			$('.mybtn').addClass("infoHide");
+			$('.meizu').addClass("infoHide");
+			$('.github').addClass("infoHide");
+			$('.kePublic').addClass("infoHide");
 		},
 		//进入到某屏页面之后触发的回调函数
 		afterLoad: function(anchorLink, index) {
@@ -50,10 +53,10 @@ $(function() {
 					$(this).removeClass("infoHide").addClass("bounceIn");
 				});
 				$('.inner').find('p').each(function() {
-					$(this).removeClass("infoHide").delay(750).addClass("bounceIn");
+					$(this).removeClass("infoHide").addClass("bounceIn");
 				});
-				$('.headLogo').removeClass("infoHide").delay(500).addClass("showup");
-				$('.telPhone').removeClass("infoHide").delay(1000).addClass("showup");
+				$('.headLogo').removeClass("infoHide").addClass("showup");
+				$('.telPhone').removeClass("infoHide").addClass("showup");
 			}
 			if(index == 6){
 				$('.inner').find('h1').each(function() {
@@ -62,8 +65,16 @@ $(function() {
 				$('.inner').find('p').each(function() {
 					$(this).removeClass("infoHide").addClass("bounceIn");
 				});
-				$('.mypic').removeClass("infoHide").delay(500).addClass("showup");
-				$('.mybtn').removeClass("infoHide").delay(1000).addClass("showup");
+				$('.mypic').removeClass("infoHide").addClass("showup");
+				$('.mybtn').removeClass("infoHide").addClass("showup");
+			}
+			if(index == 7){
+				$('.inner').find('h1').each(function() {
+					$(this).removeClass("infoHide").addClass("zoomIn");
+				});
+				$('.meizu').removeClass("infoHide").addClass("zoomIn");
+				$('.github').removeClass("infoHide").addClass("showup");
+				$('.kePublic').removeClass("infoHide").addClass("zoomIn");
 			}
 		},
 		//离开页面时执行的回调函数
@@ -101,8 +112,16 @@ $(function() {
 				$('.inner').find('p').each(function() {
 					$(this).addClass("infoHide").removeClass("bounceIn");
 				});
-				$('.mypic').addClass("infoHide").delay(500).removeClass("showup");
-				$('.mybtn').addClass("infoHide").delay(1000).removeClass("showup");
+				$('.mypic').addClass("infoHide").removeClass("showup");
+				$('.mybtn').addClass("infoHide").removeClass("showup");
+			}
+			if(index == 7) {
+				$('.inner').find('h1').each(function() {
+					$(this).addClass("infoHide").removeClass("zoomIn");
+				});
+				$('.meizu').addClass("infoHide").removeClass("zoomIn");
+				$('.github').addClass("infoHide").removeClass("showup");
+				$('.kePublic').addClass("infoHide").removeClass("zoomIn");
 			}
 		}
 	});
@@ -130,6 +149,7 @@ $(function() {
 //选择题环节的趣味回答2
 $(function() {
 	var i = 1;
+	var j = 1;
 //	$('.high').click(function() {
 //		if(i < 2) {
 //			$(".yesReply2").fadeIn();
@@ -157,8 +177,19 @@ $(function() {
 				
 	});
 	$('.low').click(function() {
-		$(".noReply").fadeIn().delay(3000).fadeOut();
-		$('.low').attr("disabled", "disabled");
+		if(j < 2){
+			$('.low').css("top", "40px");
+			j++;
+		}else if(j >= 2 & j < 3){
+			$('.low').css("right", "105px");
+			j++;			
+		}else if(j >= 3 & j < 4){
+			$('.low').css("top", "0px").css("right", "0");
+			j++;
+		}else{
+			$(".noReply").fadeIn().delay(3000).fadeOut();
+			$('.low').attr("disabled", "disabled");
+		}
 	});
 });
 
