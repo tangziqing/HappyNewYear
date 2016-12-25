@@ -72,6 +72,8 @@ $(function() {
 			location.href = "./xiufeng.html";
 		} else if(name == "谭静") {
 			location.href = "./jingjing.html";
+		} else if(name == "刘一锋") {
+			location.href = "./yifeng.html";
 		} else {
 			location.href = "./friends.html";
 		}

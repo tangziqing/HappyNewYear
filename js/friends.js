@@ -26,8 +26,7 @@ $(function() {
 			$('.telPhone').addClass("infoHide");
 			$('.mypic').addClass("infoHide");
 			$('.mybtn').addClass("infoHide");
-			$('.meizu').addClass("infoHide");
-			$('.github').addClass("infoHide");
+			$('footer').addClass("infoHide");
 			$('.kePublic').addClass("infoHide");
 		},
 		//进入到某屏页面之后触发的回调函数
@@ -72,8 +71,7 @@ $(function() {
 				$('.inner').find('h1').each(function() {
 					$(this).removeClass("infoHide").addClass("zoomIn");
 				});
-				$('.meizu').removeClass("infoHide").addClass("zoomIn");
-				$('.github').removeClass("infoHide").addClass("showup");
+				$('footer').removeClass("infoHide").addClass("zoomIn");
 				$('.kePublic').removeClass("infoHide").addClass("zoomIn");
 			}
 		},
@@ -119,8 +117,7 @@ $(function() {
 				$('.inner').find('h1').each(function() {
 					$(this).addClass("infoHide").removeClass("zoomIn");
 				});
-				$('.meizu').addClass("infoHide").removeClass("zoomIn");
-				$('.github').addClass("infoHide").removeClass("showup");
+				$('footer').addClass("infoHide").removeClass("zoomIn");
 				$('.kePublic').addClass("infoHide").removeClass("zoomIn");
 			}
 		}
