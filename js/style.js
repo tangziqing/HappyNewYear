@@ -28,7 +28,7 @@ $(function() {
 		e.stopPropagation();
 	});
 
-	//判断输入的内容跳转到相应的页面，low bee方法
+	//判断输入的内容跳转到相应的页面，low bee方法，排名不分先后
 	$('#submit').click(function() {
 		var name = $('#password').val();
 		if(typeof(Storage) !== "undefined") {
@@ -74,6 +74,14 @@ $(function() {
 			location.href = "./jingjing.html";
 		} else if(name == "刘一锋") {
 			location.href = "./yifeng.html";
+		} else if(name == "王翔辉") {
+			location.href = "./huige.html";
+		} else if(name == "尹小芳") {
+			location.href = "./xiaofangjie.html";
+		} else if(name == "梁潇") {
+			location.href = "./liangxiao.html";
+		} else if(name == "张涵越") {
+			location.href = "./hanyue.html";
 		} else {
 			location.href = "./friends.html";
 		}

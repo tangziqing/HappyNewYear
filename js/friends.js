@@ -49,20 +49,20 @@ $(function() {
 			}
 			if(index == 5) {
 				$('.inner').find('h1').each(function() {
-					$(this).removeClass("infoHide").addClass("bounceIn");
+					$(this).removeClass("infoHide").addClass("zoomIn");
 				});
 				$('.inner').find('p').each(function() {
-					$(this).removeClass("infoHide").addClass("bounceIn");
+					$(this).removeClass("infoHide").addClass("zoomIn");
 				});
 				$('.headLogo').removeClass("infoHide").addClass("showup");
 				$('.telPhone').removeClass("infoHide").addClass("showup");
 			}
 			if(index == 6){
 				$('.inner').find('h1').each(function() {
-					$(this).removeClass("infoHide").addClass("bounceIn");
+					$(this).removeClass("infoHide").addClass("zoomIn");
 				});
 				$('.inner').find('p').each(function() {
-					$(this).removeClass("infoHide").addClass("bounceIn");
+					$(this).removeClass("infoHide").addClass("zoomIn");
 				});
 				$('.mypic').removeClass("infoHide").addClass("showup");
 				$('.mybtn').removeClass("infoHide").addClass("showup");
@@ -95,20 +95,20 @@ $(function() {
 			}
 			if(index == 5) {
 				$('.inner').find('h1').each(function() {
-					$(this).addClass("infoHide").removeClass("bounceIn");
+					$(this).addClass("infoHide").removeClass("zoomIn");
 				});
 				$('.inner').find('p').each(function() {
-					$(this).addClass("infoHide").removeClass("bounceIn");
+					$(this).addClass("infoHide").removeClass("zoomIn");
 				});
 				$('.headLogo').addClass("infoHide").removeClass("showup");
 				$('.telPhone').addClass("infoHide").removeClass("showup");
 			}
 			if(index == 6) {
 				$('.inner').find('h1').each(function() {
-					$(this).addClass("infoHide").removeClass("bounceIn");
+					$(this).addClass("infoHide").removeClass("zoomIn");
 				});
 				$('.inner').find('p').each(function() {
-					$(this).addClass("infoHide").removeClass("bounceIn");
+					$(this).addClass("infoHide").removeClass("zoomIn");
 				});
 				$('.mypic').addClass("infoHide").removeClass("showup");
 				$('.mybtn').addClass("infoHide").removeClass("showup");
