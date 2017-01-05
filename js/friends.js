@@ -210,3 +210,43 @@ $(function() {
 			alert("对不起，Android版微信不支持该功能，请手动长按复制");
 		});
 });
+
+//摇一摇
+$(function() {
+	var Main = (function() {
+			function playAudio(src) {
+			    if (typeof Audio != "undefined") { 
+			        new Audio(src).play() ;
+			    } else if (typeof device != "undefined") {
+			        if (device.platform == 'Android') {
+			            console.log(src);
+			        }
+			        var mediaRes = new Media(src,
+			            function onSuccess() {
+			                mediaRes.release();
+			            },
+			            function onError(e){
+			                console.log("error playing sound: " + JSON.stringify(e));
+			            });
+			        mediaRes.play();
+
+			    } else {
+			        alert("no sound API to play: " + src);
+			    }
+			}
+			window.addEventListener('shake', autoRun, false);
+			function autoRun(){
+					$("#se1").hide();
+					$("#se2").show();
+					playAudio("media/redPacket.mp3");			
+			}
+			var init = function() {
+				
+			}
+			return {
+				init: init
+			}
+		})();
+
+		$(Main.init());
+});

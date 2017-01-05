@@ -9,20 +9,20 @@
 	<title>礼物 - 3.8</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/index.css">
-	<script src="js/zepto.min.js"></script>
+	<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 	<script src="js/shake.js"></script>
 </head>
 <body>
 	<!-- <div id="my_player"></div> -->
-	<header>
+	<div class="redPacket">
 		<p>新年红包，来了…</p>
 		<div class="paper-t"></div>
 		<div class="main">
 			<div class="main-top top2">
 				<section id="se1">
-					<p>接着，摇一摇…</p>
+					<p>赶紧，摇一摇…</p>
 					<img src="img/shake.png"/>
-					<p>最后，这就是见证奇迹的时刻…</p>
+					<p>接下来就是见证奇迹的时刻…</p>
 				</section>
 				<section id="se2" class="hide">
 					<p>2017新年快乐！</p>
@@ -32,7 +32,7 @@
 			</div>
 		</div>
 		<div class="paper-b"></div>
-	</header>
+	</div>
 </body>
 	<script>
 		var Main = (function() {
@@ -60,7 +60,7 @@
 			function autoRun(){
 					$("#se1").hide();
 					$("#se2").show();
-					playAudio("media/gift.ogg");			
+					playAudio("media/redPacket.mp3");			
 			}
 			var init = function() {
 				
