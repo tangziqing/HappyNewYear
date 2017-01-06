@@ -201,6 +201,8 @@ $(function() {
 	clipboard.on('success',
 		function(e) {
 			$(".redPacketInfo").fadeOut();
+			$(".redPacketBox").removeClass("comeup");
+			$(".close").removeClass("comeup");
 			$(".copyRight").fadeIn().delay(3000).fadeOut();
 		});
 	clipboard.on('error',
@@ -235,13 +237,15 @@ $(function() {
 			}
 			window.addEventListener('shake', autoRun, false);
 			function autoRun(){
-					playAudio("media/luckymoney.mp3");
+					playAudio("http://ogovuaov8.bkt.clouddn.com/luckymoney.mp3");
 					$(".redPacketInfo").fadeIn();
 					$(".redPacketBox").addClass("comeup");
+					$(".close").addClass("comeup");
 					
 					$(".close").one("click", function() {
 						$(".redPacketInfo").hide();
 						$(".redPacketBox").removeClass("comeup");
+						$(".close").removeClass("comeup");
 					});
 			
 					e.stopPropagation(); //阻止冒泡事件
