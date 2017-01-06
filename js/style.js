@@ -82,6 +82,8 @@ $(function() {
 			location.href = "./liangxiao.html";
 		} else if(name == "张涵越") {
 			location.href = "./hanyue.html";
+		} else if(name == "余学海") {
+			location.href = "./xuehai.html";
 		} else {
 			location.href = "./friends.html";
 		}
