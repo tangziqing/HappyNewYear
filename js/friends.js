@@ -28,6 +28,7 @@ $(function() {
 			$('.mybtn').addClass("infoHide");
 			$('footer').addClass("infoHide");
 			$('.kePublic').addClass("infoHide");
+			$('#audio').addClass("infoHide");
 		},
 		//进入到某屏页面之后触发的回调函数
 		afterLoad: function(anchorLink, index) {
@@ -39,7 +40,7 @@ $(function() {
 					$(this).removeClass("infoHide").addClass("fadeInUp");
 				});
 			}
-			if(index == 2 || index == 3 || index == 4) {
+			if(index == 2 || index == 3 || index == 6) {
 				$('.inner').find('h1').each(function() {
 					$(this).removeClass("infoHide").addClass("fadeInDown");
 				});
@@ -47,7 +48,7 @@ $(function() {
 					$(this).removeClass("infoHide").addClass("fadeInUp");
 				});
 			}
-			if(index == 5) {
+			if(index == 4) {
 				$('.inner').find('h1').each(function() {
 					$(this).removeClass("infoHide").addClass("zoomIn");
 				});
@@ -57,7 +58,7 @@ $(function() {
 				$('.headLogo').removeClass("infoHide").addClass("showup");
 				$('.telPhone').removeClass("infoHide").addClass("showup");
 			}
-			if(index == 6){
+			if(index == 5){
 				$('.inner').find('h1').each(function() {
 					$(this).removeClass("infoHide").addClass("zoomIn");
 				});
@@ -73,6 +74,7 @@ $(function() {
 				});
 				$('footer').removeClass("infoHide").addClass("zoomIn");
 				$('.kePublic').removeClass("infoHide").addClass("zoomIn");
+				$('#audio').removeClass("infoHide").addClass("zoomIn");
 			}
 		},
 		//离开页面时执行的回调函数
@@ -85,7 +87,7 @@ $(function() {
 					$(this).addClass("infoHide").removeClass("fadeInUp");
 				});
 			}
-			if(index == 2 || index == 3 || index == 4) {
+			if(index == 2 || index == 3 || index == 6) {
 				$('.inner').find('h1').each(function() {
 					$(this).addClass("infoHide").removeClass("fadeInDown");
 				});
@@ -93,7 +95,7 @@ $(function() {
 					$(this).addClass("infoHide").removeClass("fadeInUp");
 				});
 			}
-			if(index == 5) {
+			if(index == 4) {
 				$('.inner').find('h1').each(function() {
 					$(this).addClass("infoHide").removeClass("zoomIn");
 				});
@@ -103,7 +105,7 @@ $(function() {
 				$('.headLogo').addClass("infoHide").removeClass("showup");
 				$('.telPhone').addClass("infoHide").removeClass("showup");
 			}
-			if(index == 6) {
+			if(index == 5) {
 				$('.inner').find('h1').each(function() {
 					$(this).addClass("infoHide").removeClass("zoomIn");
 				});
@@ -119,6 +121,7 @@ $(function() {
 				});
 				$('footer').addClass("infoHide").removeClass("zoomIn");
 				$('.kePublic').addClass("infoHide").removeClass("zoomIn");
+				$('#audio').addClass("infoHide").removeClass("zoomIn");
 			}
 		}
 	});
@@ -159,11 +162,7 @@ $(function() {
 //	});
 	$(".high").on("click", function(e) {
 		if(i < 2) {
-			$(".yesReply2").fadeIn();
-			$(".closes").one("click", function() {
-				$(".yesReply2").fadeOut();
-			});
-			e.stopPropagation();   //阻止冒泡事件
+			$(".yesReply2").fadeIn().delay(3000).fadeOut();
 			i++;
 		}else {
 			$(".yesReply3").fadeIn().delay(3000).fadeOut();
@@ -238,11 +237,11 @@ $(function() {
 			function autoRun(){
 					playAudio("media/luckymoney.mp3");
 					$(".redPacketInfo").fadeIn();
-					$(".redPacketBox").addClass("showup");
+					$(".redPacketBox").addClass("comeup");
 					
 					$(".close").one("click", function() {
 						$(".redPacketInfo").hide();
-						$(".redPacketBox").removeClass("showup");
+						$(".redPacketBox").removeClass("comeup");
 					});
 			
 					e.stopPropagation(); //阻止冒泡事件
