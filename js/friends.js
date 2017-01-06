@@ -201,7 +201,7 @@ $(function() {
 	});
 	clipboard.on('success',
 		function(e) {
-			$(".yesReply2").fadeOut();
+			$(".redPacketInfo").fadeOut();
 			$(".copyRight").fadeIn().delay(3000).fadeOut();
 		});
 	clipboard.on('error',
@@ -236,9 +236,20 @@ $(function() {
 			}
 			window.addEventListener('shake', autoRun, false);
 			function autoRun(){
-					playAudio("media/luckymoney.ogg");
-					$("#se1").hide();
-					$("#se2").delay(1000).show();								
+					playAudio("media/luckymoney.mp3");
+					$(".redPacketInfo").fadeIn();
+					$(".redPacketBox").addClass("showup");
+					
+					$(".close").one("click", function() {
+						$(".redPacketInfo").hide();
+						$(".redPacketBox").removeClass("showup");
+					});
+			
+					e.stopPropagation(); //阻止冒泡事件
+					
+					$(".redPacketBox").on("click", function(e) {
+						e.stopPropagation();
+					});
 			}
 			var init = function() {
 				
