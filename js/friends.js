@@ -236,9 +236,9 @@ $(function() {
 			}
 			window.addEventListener('shake', autoRun, false);
 			function autoRun(){
+					playAudio("media/luckymoney.ogg");
 					$("#se1").hide();
-					$("#se2").show();
-					playAudio("media/redPacket.mp3");			
+					$("#se2").delay(1000).show();								
 			}
 			var init = function() {
 				

@@ -526,11 +526,12 @@ body {
 	top: 0;
 }
 
-.redPacket p {
+.redPacket h1 {
 	color: #fff;
 	text-align: center;
 	font-size: 20px;
-	line-height: 60px
+	line-height: 60px;
+	font-weight: bold;
 }
 
 .hide {
