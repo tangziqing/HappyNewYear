@@ -117,7 +117,7 @@ body {
 }
 
 .intro1 h1 {
-	width: 60%;
+	width: 70%;
 	margin: 0 auto;
 	font-size: 1.5em;
 	line-height: 30px;
@@ -130,7 +130,7 @@ body {
 .intro2 h1,
 .intro3 h1,
 .intro4 h1 {
-	width: 60%;
+	width: 70%;
 	margin: 0 auto;
 	font-size: 1.5em;
 	line-height: 26px;
@@ -159,17 +159,16 @@ body {
 	color: #999999;
 }
 .intro5 {
-	padding-top: 20%;
 	text-align: center;
 }
 .intro5 h1 {
-	width: 60%;
+	width: 90%;
 	margin: 0 auto;
 	font-family: "微软雅黑";
-	font-size: 1.6em;
+	font-size: 1.5em;
 	line-height: 30px;
+	padding-bottom: 4%;
 	color: #fff;
-	padding-bottom: 10%;
 	letter-spacing: 2px;
 }
 .intro6 h1 {
@@ -621,6 +620,25 @@ body {
 	color: #FF9900;
 	font-size: 18px;
 	line-height: 30px;
+}
+
+.keywords{
+	width: 40%;
+	height: auto;
+	margin: 0 auto;
+}
+.keywords img{
+	width: 100%;
+	height: 100%;
+}
+.eyes{
+	width: 40%;
+	height: auto;
+	margin: 0 auto;
+}
+.eyes img{
+	width: 100%;
+	height: 100%;
 }
 .close {
     width: 36px;

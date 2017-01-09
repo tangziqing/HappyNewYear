@@ -29,6 +29,8 @@ $(function() {
 			$('footer').addClass("infoHide");
 			$('.kePublic').addClass("infoHide");
 			$('#audio').addClass("infoHide");
+			$('.keywords').addClass("infoHide");
+			$('.eyes').addClass("infoHide");
 		},
 		//进入到某屏页面之后触发的回调函数
 		afterLoad: function(anchorLink, index) {
@@ -75,6 +77,8 @@ $(function() {
 				$('footer').removeClass("infoHide").addClass("zoomIn");
 				$('.kePublic').removeClass("infoHide").addClass("zoomIn");
 				$('#audio').removeClass("infoHide").addClass("zoomIn");
+				$('.keywords').removeClass("infoHide").addClass("showup");
+				$('.eyes').removeClass("infoHide").addClass("showup");
 			}
 		},
 		//离开页面时执行的回调函数
@@ -122,6 +126,8 @@ $(function() {
 				$('footer').addClass("infoHide").removeClass("zoomIn");
 				$('.kePublic').addClass("infoHide").removeClass("zoomIn");
 				$('#audio').addClass("infoHide").removeClass("zoomIn");
+				$('.keywords').addClass("infoHide").removeClass("showup");
+				$('.eyes').addClass("infoHide").removeClass("showup");
 			}
 		}
 	});
