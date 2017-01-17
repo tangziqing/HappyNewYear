@@ -16,7 +16,7 @@
         this.hasDeviceMotion = 'ondevicemotion' in window;
 
         //default velocity threshold for shake to register
-        this.threshold = 20;
+        this.threshold = 16;
 
 		this.timeout = 5000;
         //use date to prevent multiple shakes firing

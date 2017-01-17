@@ -274,6 +274,7 @@ $(function() {
 //放大图片
 $(function() {
 	baguetteBox.run('.mypic', {
+		noScrollbars: true,
 		buttons: false
 	});
 });
