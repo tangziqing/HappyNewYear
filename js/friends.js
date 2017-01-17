@@ -60,7 +60,7 @@ $(function() {
 				$('.headLogo').removeClass("infoHide").addClass("showup");
 				$('.telPhone').removeClass("infoHide").addClass("showup");
 			}
-			if(index == 5){
+			if(index == 5) {
 				$('.inner').find('h1').each(function() {
 					$(this).removeClass("infoHide").addClass("zoomIn");
 				});
@@ -70,7 +70,7 @@ $(function() {
 				$('.mypic').removeClass("infoHide").addClass("showup");
 				$('.mybtn').removeClass("infoHide").addClass("showup");
 			}
-			if(index == 7){
+			if(index == 7) {
 				$('.inner').find('h1').each(function() {
 					$(this).removeClass("infoHide").addClass("zoomIn");
 				});
@@ -156,39 +156,38 @@ $(function() {
 $(function() {
 	var i = 1;
 	var j = 1;
-//	$('.high').click(function() {
-//		if(i < 2) {
-//			$(".yesReply2").fadeIn();
-//			i++;
-//		} else {
-//			$(".yesReply3").fadeIn().delay(3000).fadeOut();
-//			$('.high').attr("disabled", "disabled");
-//		}
-//
-//	});
+	//	$('.high').click(function() {
+	//		if(i < 2) {
+	//			$(".yesReply2").fadeIn();
+	//			i++;
+	//		} else {
+	//			$(".yesReply3").fadeIn().delay(3000).fadeOut();
+	//			$('.high').attr("disabled", "disabled");
+	//		}
+	//
+	//	});
 	$(".high").on("click", function(e) {
 		if(i < 2) {
 			$(".yesReply2").fadeIn().delay(3000).fadeOut();
 			i++;
-		}else {
+		} else {
 			$(".yesReply3").fadeIn().delay(3000).fadeOut();
 			$('.high').attr("disabled", "disabled");
 			$('.low').attr("disabled", "disabled");
 		}
 
-				
 	});
 	$('.low').click(function() {
-		if(j < 2){
+		if(j < 2) {
 			$('.low').css("top", "40px");
 			j++;
-		}else if(j >= 2 & j < 3){
+		} else if(j >= 2 & j < 3) {
 			$('.low').css("right", "105px");
-			j++;			
-		}else if(j >= 3 & j < 4){
+			j++;
+		} else if(j >= 3 & j < 4) {
 			$('.low').css("top", "0px").css("right", "0");
 			j++;
-		}else{
+		} else {
 			$(".noReply").fadeIn().delay(3000).fadeOut();
 			$('.low').attr("disabled", "disabled");
 		}
@@ -213,7 +212,7 @@ $(function() {
 		});
 	clipboard.on('error',
 		function(e) {
-			console.log(e);			
+			console.log(e);
 			alert("对不起，您的微信不支持该功能，请手动长按复制");
 		});
 });
@@ -221,52 +220,60 @@ $(function() {
 //摇一摇
 $(function() {
 	var Main = (function() {
-			function playAudio(src) {
-			    if (typeof Audio != "undefined") { 
-			        new Audio(src).play() ;
-			    } else if (typeof device != "undefined") {
-			        if (device.platform == 'Android') {
-			            console.log(src);
-			        }
-			        var mediaRes = new Media(src,
-			            function onSuccess() {
-			                mediaRes.release();
-			            },
-			            function onError(e){
-			                console.log("error playing sound: " + JSON.stringify(e));
-			            });
-			        mediaRes.play();
-
-			    } else {
-			        alert("no sound API to play: " + src);
-			    }
-			}
-			window.addEventListener('shake', autoRun, false);
-			function autoRun(){
-					playAudio("http://ogovuaov8.bkt.clouddn.com/luckymoney.mp3");
-					$(".redPacketInfo").fadeIn();
-					$(".redPacketBox").addClass("comeup");
-					$(".close").addClass("comeup");
-					
-					$(".close").one("click", function() {
-						$(".redPacketInfo").hide();
-						$(".redPacketBox").removeClass("comeup");
-						$(".close").removeClass("comeup");
+		function playAudio(src) {
+			if(typeof Audio != "undefined") {
+				new Audio(src).play();
+			} else if(typeof device != "undefined") {
+				if(device.platform == 'Android') {
+					console.log(src);
+				}
+				var mediaRes = new Media(src,
+					function onSuccess() {
+						mediaRes.release();
+					},
+					function onError(e) {
+						console.log("error playing sound: " + JSON.stringify(e));
 					});
-			
-					e.stopPropagation();
-					
-					$(".redPacketBox").on("click", function(e) {
-						e.stopPropagation();
-					});
-			}
-			var init = function() {
-				
-			}
-			return {
-				init: init
-			}
-		})();
+				mediaRes.play();
 
-		$(Main.init());
+			} else {
+				alert("no sound API to play: " + src);
+			}
+		}
+		window.addEventListener('shake', autoRun, false);
+
+		function autoRun() {
+			playAudio("http://ogovuaov8.bkt.clouddn.com/luckymoney.mp3");
+			$(".redPacketInfo").fadeIn();
+			$(".redPacketBox").addClass("comeup");
+			$(".close").addClass("comeup");
+
+			$(".close").one("click", function() {
+				$(".redPacketInfo").hide();
+				$(".redPacketBox").removeClass("comeup");
+				$(".close").removeClass("comeup");
+			});
+
+			e.stopPropagation();
+
+			$(".redPacketBox").on("click", function(e) {
+				e.stopPropagation();
+			});
+		}
+		var init = function() {
+
+		}
+		return {
+			init: init
+		}
+	})();
+
+	$(Main.init());
+});
+
+//放大图片
+$(function() {
+	baguetteBox.run('.mypic', {
+		buttons: false
+	});
 });

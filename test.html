@@ -1,59 +1,88 @@
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
-<!--移动设备申明moblie类型-->
+<!doctype html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>baguetteBox.js | Demo</title>
+    <link rel="stylesheet" href="css/baguetteBox.css">
+    <style>
+body {
+    background-color: #666;
+    color: #ddd;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="renderer" content="webkit|ie-comp|ie-stand">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-		<!--使移动端禁止网页的放缩-->
-		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-		<title>你好，我的朋友</title>
-		<link href="css/reset.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+a, a:visited {
+    color: #9EB4CA;;
+    text-decoration: none;
+}
 
-		<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
-		<script src="https://cdn.bootcss.com/clipboard.js/1.5.15/clipboard.min.js"></script>
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-	      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-	    <![endif]-->
-	</head>
+h1, h2, h3, footer, .gallery {
+    text-align: center;
+}
 
-	<body>
-		<div class="head">
-			<span class="hello">你好,我亲爱的朋友</span>
-			<div class="username"></div>
-			<div class="clear"></div>
-		</div>
+@media (max-width: 480px) {
+    pre {
+        max-width: 98%;
+    }
+}
 
-		<div class="content">
-			<p id="c">重庆邮电大学是国家布点设立并重点建设的几所邮电高校之一，是工业和信息化部与重庆市共建的一所特色鲜明、优势突出，在信息通信领域具有重要影响的高水平教学研究型大学。</p>
-			<button type="button" class="mybtn copy">复制</button>
-		</div>
-		<script>
-			var c = document.getElementById("c");
-			var s = c.innerHTML;
-			var clipboard = new Clipboard('.copy', {
-				text: function() {
-					return s;
-				}
-			});
-			clipboard.on('success',
-				function(e) {
-					alert("复制成功");
-				});
-			clipboard.on('error',
-				function(e) {
-					console.log(e);
-				});
-		</script>
+.gallery:after {
+    content: '';
+    display: block;
+    height: 2px;
+    margin: .5em 0 1.4em;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+}
 
-	</body>
+.gallery img {
+    height: 100%;
+}
 
+.gallery a {
+    width: 240px;
+    height: 180px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 4px 6px;
+    box-shadow: 0 0 4px -1px #000;
+}
+
+@media (max-width: 768px) {
+    .sm-hidden {
+        display: none;
+    }
+}
+
+/* Highlight.js Tomorrow Night style */
+.hljs-comment{color:#969896}.hljs-tag{color:#f8f8f2}.css .hljs-class,.css .hljs-id,.css .hljs-pseudo,.hljs-attribute,.hljs-regexp,.hljs-title,.hljs-variable,.html .hljs-doctype,.ruby .hljs-constant,.xml .hljs-doctype,.xml .hljs-pi,.xml .hljs-tag .hljs-title{color:#c66}.hljs-built_in,.hljs-constant,.hljs-literal,.hljs-number,.hljs-params,.hljs-pragma,.hljs-preprocessor{color:#de935f}.css .hljs-rules .hljs-attribute,.ruby .hljs-class .hljs-title{color:#f0c674}.hljs-header,.hljs-inheritance,.hljs-string,.hljs-value,.ruby .hljs-symbol,.xml .hljs-cdata{color:#b5bd68}.css .hljs-hexcolor{color:#8abeb7}.coffeescript .hljs-title,.hljs-function,.javascript .hljs-title,.perl .hljs-sub,.python .hljs-decorator,.python .hljs-title,.ruby .hljs-function .hljs-title,.ruby .hljs-title .hljs-keyword{color:#81a2be}.hljs-keyword,.javascript .hljs-function{color:#b294bb}.hljs{display:block;overflow-x:auto;background:#35383C;color:#c5c8c6;padding:.8em}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .css,.xml .hljs-cdata,.xml .javascript,.xml .vbscript{opacity:.5}
+    </style>
+</head>
+<body>
+
+    <div class="baguetteBoxFour gallery">
+        <a href="img/tangsong.jpg" data-caption="Balloon trip"><img src="img/tangsong.jpg" alt="Balloon trip"></a>
+
+</div>
+<script src="js/baguetteBox.js" async></script>
+<script src="js/plugins.js" async></script>
+<!--[if lt IE 9]>
+<script>
+var oldIE = true;
+</script>
+<![endif]-->
+<script>
+window.onload = function() {
+    if (typeof oldIE === 'undefined' && Object.keys) {
+        hljs.initHighlighting();
+    }
+    baguetteBox.run('.baguetteBoxFour', {
+        buttons: false
+    });
+};
+</script>
+</body>
 </html>
