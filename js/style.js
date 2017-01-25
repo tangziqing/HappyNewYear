@@ -56,6 +56,8 @@ $(function() {
 			location.href = "./jingjing.html";
 		} else if(name == "董琳珏") {
 			location.href = "./juejue.html";
+		} else if(name == "胡世玲") {
+			location.href = "./liangliang.html";
 		} else if(name == "梁琦") {
 			location.href = "./liangqi.html";
 		} else if(name == "梁潇") {
