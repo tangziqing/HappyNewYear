@@ -4,7 +4,7 @@ $(function() {
 		var GanYuanYou = $(this).val();
 		var NameLength = $(this).val().length;
 		if(NameLength >= 2) {
-			$('#submit').text("新年快乐");
+			$('#submit').text("教师节快乐");
 			$('#submit').removeAttr("disabled");
 		} else {
 			$('#submit').text("点击进入");
@@ -98,7 +98,9 @@ $(function() {
 			location.href = "./zhouwei.html";
 		} else if(name == "余学海") {
 			location.href = "./xuehai.html";
-		} else {
+		} else if(name == "周祥君") {
+            location.href = "./teacher.html";
+        } else {
 			location.href = "./friends.html";
 		}
 	});
