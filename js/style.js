@@ -36,68 +36,54 @@ $(function() {
 		}
 		if(name == "唐松") {
 			location.href = "./tangsong.html";
-		} else if(name == "甘元佑") {
-			location.href = "./agan.html";
-		} else if(name == "夏贞逸") {
-			location.href = "./azhen.html";
-		} else if(name == "尹佳怡") {
-			location.href = "./azhu.html";
-		} else if(name == "段预测") {
-			location.href = "./duanzong.html";
-		} else if(name == "於琳童") {
-			location.href = "./ertong.html";
-		} else if(name == "吴承涵") {
-			location.href = "./hange.html";
-		} else if(name == "张涵越") {
-			location.href = "./hanyue.html";
-		} else if(name == "王翔辉") {
-			location.href = "./huige.html";
-		} else if(name == "谭静") {
-			location.href = "./jingjing.html";
-		} else if(name == "董琳珏") {
-			location.href = "./juejue.html";
-		} else if(name == "胡世玲") {
-			location.href = "./liangliang.html";
-		} else if(name == "梁琦") {
-			location.href = "./liangqi.html";
-		} else if(name == "梁潇") {
-			location.href = "./liangxiao.html";
-		} else if(name == "李靖") {
-			location.href = "./lijing.html";
-		} else if(name == "李俊") {
-			location.href = "./lijun.html";
-		} else if(name == "胡胜男") {
-			location.href = "./nannan.html";
-		} else if(name == "冀倩倩") {
-			location.href = "./qianqian.html";
-		} else if(name == "赵帅帅") {
-			location.href = "./shuaishuai.html";
-		} else if(name == "刘爽") {
-			location.href = "./shuangge.html";
-		} else if(name == "王思思") {
-			location.href = "./sisi.html";
-		} else if(name == "张桃") {
-			location.href = "./taotao.html";
-		} else if(name == "李小芳") {
-			location.href = "./xiaofang.html";
-		} else if(name == "尹小芳") {
-			location.href = "./xiaofangjie.html";
-		} else if(name == "唐伶凤") {
-			location.href = "./xiaofeng.html";
-		} else if(name == "汪秀凤") {
-			location.href = "./xiufeng.html";
 		} else if(name == "李娅兰") {
 			location.href = "./yalan.html";
 		} else if(name == "雷琇麟") {
 			location.href = "./xiulin.html";
+		} else if(name == "张桃") {
+			location.href = "./taotao.html";
+		} else if(name == "梁琦") {
+			location.href = "./liangqi.html";
+		} else if(name == "於琳童") {
+			location.href = "./ertong.html";
 		} else if(name == "周云津") {
 			location.href = "./yunjin.html";
+		} else if(name == "夏贞逸") {
+			location.href = "./azhen.html";
+		} else if(name == "段预测") {
+			location.href = "./duanzong.html";
+		} else if(name == "胡胜男") {
+			location.href = "./nannan.html";
+		} else if(name == "王思思") {
+			location.href = "./sisi.html";
+		} else if(name == "冀倩倩") {
+			location.href = "./qianqian.html";
+		} else if(name == "唐伶凤") {
+			location.href = "./xiaofeng.html";
+		} else if(name == "李小芳") {
+			location.href = "./xiaofang.html";
+		} else if(name == "董琳珏") {
+			location.href = "./juejue.html";
+		} else if(name == "甘元佑") {
+			location.href = "./agan.html";
+		} else if(name == "尹佳怡") {
+			location.href = "./azhu.html";
+		} else if(name == "汪秀凤") {
+			location.href = "./xiufeng.html";
+		} else if(name == "谭静") {
+			location.href = "./jingjing.html";
 		} else if(name == "刘一锋") {
 			location.href = "./yifeng.html";
-		} else if(name == "周伟") {
-			location.href = "./zhouwei.html";
-		} else if(name == "余学海") {
-			location.href = "./xuehai.html";
+		} else if(name == "王翔辉") {
+			location.href = "./huige.html";
+		} else if(name == "尹小芳") {
+			location.href = "./xiaofangjie.html";
+		} else if(name == "梁潇") {
+			location.href = "./liangxiao.html";
+		} else if(name == "张涵越") {
+			location.href = "./hanyue.html";
+		} else if(name == "周祥君") {
+			location.href = "./teacher.html";
 		} else {
 			location.href = "./friends.html";
 		}
